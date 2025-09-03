@@ -25,8 +25,6 @@ from django.conf import settings
 
 from core import views as core_views
 
-import core.views
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/health-check/', core_views.health_check, name='health-check'),
